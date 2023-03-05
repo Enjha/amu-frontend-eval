@@ -2,6 +2,7 @@
 @import url("bootstrap/dist/css/bootstrap.min.css");
 body{
   font-family: 'Roboto', sans-serif;
+  padding: 40px;
 }
 #app{
   text-align: center;
@@ -10,8 +11,9 @@ body{
 }
 
 #global-title{
-  font-size: 60px;
-
+  font-size: 70px;
+  font-weight: bold;
 }
+
 
 

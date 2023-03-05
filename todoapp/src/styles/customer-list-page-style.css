@@ -1,26 +1,97 @@
-.container{
-  margin: 50px auto auto 0;
-  display: inline-grid;
-  gap: 20px;
-  justify-content: center;
+.container {
+  margin-top: 80px;
+  max-width: 800px;
 }
 
-#customers-list{
-  border: 1px solid black;
+#customers-list, #create-customer-form {
+  padding: 20px 0 20px 0;
+  height: 33rem;
+  background-color: #f1f1f1;
+  border-radius: 20px;
   margin: 30px auto 0 auto;
   text-align: center;
-  display: inline-grid;
+  display: block;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.22);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-#customer{
-  border: 1px solid black;
-  margin: 10px 10px 10px 10px;
+#customer {
+  border-radius: 20px;
+  background-color: #dcdcdc;
+  margin: 10px auto 10px auto;
   padding: 20px;
   width: 500px;
   display: flex;
   justify-content: space-between;
+  font-size: 20px;
 }
 
-#add-customer{
+#fullName {
+  text-decoration: none;
+
+}
+
+#add-invoice, #add-customer, #save {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 20px;
+}
+#save{
   width: 200px;
+  height: 50px;
+}
+
+#add-invoice:hover, #add-customer:hover, #save:hover {
+  box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+#back {
+  background-color: #c2e1fb;
+  border-radius: 100px;
+  box-shadow: rgba(44, 132, 187, 0.2) 0 -25px 18px -14px inset, rgba(44, 101, 187, 0.15) 0 1px 2px, rgba(44, 73, 187, 0.15) 0 2px 4px, rgba(44, 127, 187, 0.15) 0 4px 8px, rgba(44, 187, 187, .15) 0 8px 16px, rgba(44, 187, 187, .15) 0 16px 32px;
+  color: #005e80;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 20px;
+}
+
+#back:hover {
+  box-shadow: rgba(44, 137, 187, 0.35) 0 -25px 18px -14px inset, rgba(44, 123, 187, 0.25) 0 1px 2px, rgba(44, 116, 187, 0.33) 0 2px 4px, rgba(44, 106, 187, 0.25) 0 4px 8px, rgba(44, 187, 187, .25) 0 8px 16px, rgba(44, 187, 200, .25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+#button-div {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 0 40px;
+}
+
+#invoices-list {
+  margin: 60px auto auto auto;
 }

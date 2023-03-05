@@ -5,22 +5,22 @@ import {Customers} from "../types/customer";
 @Component({
   selector: "app-customer-list-page",
   template: `
-    <div class="container">
-      <h3>Liste des clients</h3>
-      <button type="button" id="add-customer" class="btn btn-success">Créer un client</button>
-      <div id="customers-list">
-        <div id="customer" *ngFor="let item of customers">
-          <a routerLink="/{{item.id}}" style="text-decoration: none;">
-            {{item.fullName}}
-          </a>
-          <label>
-             {{item.email}}
-          </label>
-        </div>
+      <div class="container">
+          <h2 style="font-size: 40px;">Liste des clients</h2>
+          <button type="button" id="add-customer" routerLink="/create">Créer un client</button>
+          <div id="customers-list">
+              <div id="customer" *ngFor="let item of customers">
+                  <a id="fullName" routerLink="/{{item.id}}/">
+                      {{item.fullName}}
+                  </a>
+                  <label>
+                      {{item.email}}
+                  </label>
+              </div>
+          </div>
       </div>
-    </div>
   `,
-  styleUrls: ['../styles/customer-list-page-style.css']
+  styleUrls: ['../../styles/customer-list-page-style.css']
 })
 export class CustomerListPageComponent {
   customers : Customers = [];

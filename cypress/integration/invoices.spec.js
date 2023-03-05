@@ -46,7 +46,7 @@ describe("Invoices Features", () => {
       .select("SENT"); // On sélectionne l'option dont la valeur est "SENT" (peu importe le texte)
     // On cherche ensuite le bouton de soumission dont le texte devrait être "Enregistrer la facture"
 
-    cy.contains("Enregistrer la facture")
+    cy.contains("Enregistrer")
       .click()
       .url()
       // On devrait être redirigé vers le détails du client pour lequel on a créé la facture (Elise Dupont)
