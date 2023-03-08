@@ -16,8 +16,8 @@ import {Invoices} from "../types/invoice";
         <p *ngIf="!customer"> (NULL)</p>
       </h2>
       <div id="button-div">
-        <button type="button" id="back" routerLink="/">Retour aux clients</button>
-        <button type="button" id="add-invoice" routerLink="/{{customer.id}}/invoices/add">Créer une facture</button>
+        <button type="button" class="back-button" routerLink="/">Retour aux clients</button>
+        <button type="button" class="success-button" id="add-invoice" routerLink="/{{customer.id}}/invoices/add">Créer une facture</button>
       </div>
       <table id="invoices-list" class="table table-striped">
         <thead class="thead-info">
@@ -36,7 +36,7 @@ import {Invoices} from "../types/invoice";
       </table>
     </div>
   `,
-  styleUrls: ['../../styles/customer-list-page-style.css']
+  styleUrls: ['../../styles/structure.css', '../../styles/utils.css']
 })
 export class CustomerDetailsPageComponent {
   customer?: Customer;

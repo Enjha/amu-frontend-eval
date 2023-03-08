@@ -14,8 +14,7 @@ import {ActivatedRoute, Router} from "@angular/router";
             class="form-control"
             name="amount"
             formControlName="amount"
-            placeholder="Montant de la facture"
-            id="amount"
+            placeholder="ex: 132,93"
           />
         </div>
         <div id="input">
@@ -27,15 +26,15 @@ import {ActivatedRoute, Router} from "@angular/router";
           </select>
         </div>
       </div>
-      <button *ngIf="loading" id="save" disabled>
+      <button *ngIf="loading" class="success-button" id="save" disabled>
         <span class="loader"></span>
       </button>
-      <button *ngIf="!loading" id="save">
+      <button *ngIf="!loading" class="success-button" id="save">
         <span>Enregistrer</span>
       </button>
     </form>
   `,
-  styleUrls: ['../../styles/customer-list-page-style.css', "../../styles/customer-create-page-style.css"]
+  styleUrls: ['../../styles/structure.css', '../../styles/utils.css']
 })
 export class InvoiceFormComponent {
   constructor(private route: ActivatedRoute, private router: Router) {

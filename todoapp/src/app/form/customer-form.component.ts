@@ -5,30 +5,38 @@ import {Router} from "@angular/router";
 @Component({
   selector: "app-customer-form-page",
   template: `
-    <form id="create-customer" (ngSubmit)="onSubmit()" [formGroup]="form">
-      <div id="inputs">
-        <input
-          type="text"
-          class="form-control"
-          name="fullName"
-          formControlName="fullName"
-          placeholder="Nom complet"
-        />
-        <input
-          type="email"
-          class="form-control"
-          name="email"
-          formControlName="email"
-          placeholder="Email"
-        />
-      </div>
-      <button id="save">
-        <span *ngIf="loading" class="loader"></span>
-        <span *ngIf="!loading">Enregistrer</span>
-      </button>
-    </form>
+      <form id="create-customer" (ngSubmit)="onSubmit()" [formGroup]="form">
+          <div id="inputs">
+              <div id="input">
+                  <label for="fullName">Nom complet:</label>
+                  <input
+                          type="text"
+                          class="form-control"
+                          name="fullName"
+                          formControlName="fullName"
+                          placeholder="ex: Denis Brogniart"
+                          id="fullName"
+                  />
+              </div>
+              <div id="input">
+                  <label for="email">Email:</label>
+                  <input
+                          type="email"
+                          class="form-control"
+                          name="email"
+                          formControlName="email"
+                          placeholder="ex: denis.b@gmail.com"
+                          id="email"
+                  />
+              </div>
+          </div>
+          <button class="success-button" id="save">
+              <span *ngIf="loading" class="loader"></span>
+              <span *ngIf="!loading">Enregistrer</span>
+          </button>
+      </form>
   `,
-  styleUrls: ['../../styles/customer-list-page-style.css', "../../styles/customer-create-page-style.css"]
+  styleUrls: ['../../styles/structure.css', '../../styles/utils.css']
 })
 export class CustomerFormComponent {
   constructor(private router: Router) {

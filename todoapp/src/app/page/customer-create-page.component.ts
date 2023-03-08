@@ -8,14 +8,14 @@ import {Customers} from "../types/customer";
       <div class="container">
           <h2 style="font-size: 40px;">Création d'un client</h2>
           <div id="button-div">
-              <button type="button" id="back" routerLink="/">Retour aux clients</button>
+              <button type="button" class="back-button" routerLink="/">Retour aux clients</button>
           </div>
           <div id="form">
               <app-customer-form-page (onNewCustomer)="addCustomer($event)"></app-customer-form-page>
           </div>
       </div>
   `,
-  styleUrls: ['../../styles/customer-list-page-style.css']
+  styleUrls: ['../../styles/structure.css', '../../styles/utils.css']
 })
 export class CustomerCreatePageComponent {
 

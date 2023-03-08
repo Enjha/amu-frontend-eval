@@ -15,7 +15,7 @@ import {Invoices} from "../types/invoice";
       </div>
     </div>
   `,
-  styleUrls: ['../../styles/customer-list-page-style.css']
+  styleUrls: ['../../styles/structure.css', '../../styles/utils.css']
 })
 export class InvoiceCreatePageComponents {
 
