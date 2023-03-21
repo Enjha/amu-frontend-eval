@@ -8,7 +8,7 @@ import {Invoices} from "../types/invoice";
     <div class="container">
       <h2 style="font-size: 40px;">Création d'une facture</h2>
       <div id="button-div">
-        <button type="button" id="back" routerLink="/">Retour aux clients</button>
+        <button type="button" id="back" class="back-button" routerLink="/">Retour aux clients</button>
       </div>
       <div id="form">
         <app-invoice-form-page (onNewInvoice)="addInvoice($event)"></app-invoice-form-page>
