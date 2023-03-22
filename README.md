@@ -2,6 +2,12 @@
 
 Dans cette évaluation, vous allez mettre en oeuvre et un projet d'application frontend de gestion de clients et de factures destiné aux indépendants et aux commerçants.
 
+## IMPORTANT !
+Utilisant la librairie bootstrap, il est important avant de lancer la commande:
+```npm run serve```
+Lancer la commande:
+```npm install```
+
 ## Conseils pour le développement
 
 Dans le dossier `cypress/integration` vous trouverez les tests fonctionnels détaillés qui expriment les éléments que l'on doit pouvoir trouver sur la page et les dynamismes attendus ainsi que les URLs qui doivent exister dans votre système de navigation.
